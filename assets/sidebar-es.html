@@ -1,22 +1,29 @@
 <!-- Convert Spanish and Rokadong links to take the user to the Spanish or Rokadong version of the current page -->
-<script type="text/javascript">
-	const url2 = window.location.pathname + window.location.search;
-	const english_link = url2.split('/').splice(url2.indexOf("spa"),1).join('/');
-	const rokadong_link = url2.split('/').map(a => {
-    if(a == 'spa') 
-        return 'rkd'; 
-    else 
-        return a;
-	}).join('/');
-  
-	document.getElementById("english-page").href=english_link;
-	document.getElementById("rokadong-page").href=rokadong_link;
-</script>
-<a href="/"><img src="https://i.imgur.com/FM4JrM1.png"><p>THE ŊORLD</a></p>
-<a href="mailto:ruviyatangan@astaryuu.cc"><img src="https://i.imgur.com/WeZ6fmy.png"><p>CONTACT</a></p>
-<a href="/selshan"><img src="https://i.imgur.com/KkJtAml.png"><p>SELSHAN</a></p>
-<a href="/news"><img src="https://i.imgur.com/eZGAhVt.png"><p>BROWSE</a></p>
-<a href="/record"><img src="https://i.imgur.com/2SMR5ij.png"><p>AUDIO</a></p>
-<a href="/about"><img src="https://i.imgur.com/zKnelZI.png"><p>ABOUT</a></p>
-<a href="#" id=english-page><img src="https://i.imgur.com/zKnelZI.png"><p>ENGLISH</a></p>
-<a href="#" id=rokadong-page><img src="https://i.imgur.com/zKnelZI.png"><p></a></p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ABOUT :: Ruviyatangan Ŋorld-Herald</title>
+		
+		<!-- Do not edit these -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+		<link href="https://hoard.astaryuu.cc/ruviyatangan/altimit.css" rel="stylesheet" type="text/css" media="all">
+		<script src="https://hoard.astaryuu.cc/astaryuu/js/html-include.js"></script>
+	</head>
+	<body>
+		<div class="side1">
+			<a href="/"><img src="https://i.imgur.com/FM4JrM1.png"><p>THE ŊORLD</a></p>
+			<a href="mailto:ruviyatangan@astaryuu.cc"><img src="https://i.imgur.com/WeZ6fmy.png"><p>CONTACT</a></p>
+			<a href="/selshan"><img src="https://i.imgur.com/KkJtAml.png"><p>SELSHAN</a></p>
+			<a href="/news"><img src="https://i.imgur.com/eZGAhVt.png"><p>BROWSE</a></p>
+			<a href="/record"><img src="https://i.imgur.com/2SMR5ij.png"><p>AUDIO</a></p>
+			<a href="/about"><img src="https://i.imgur.com/zKnelZI.png"><p>ABOUT</a></p>
+			<a href="#" id=english-page><img src="https://i.imgur.com/zKnelZI.png"><p>ENGLISH</a></p>
+			<a href="#" id=rokadong-page><img src="https://i.imgur.com/zKnelZI.png"><p></a></p>
+		</div>
+	</body>
+</html>

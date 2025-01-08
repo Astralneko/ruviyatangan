@@ -43,9 +43,9 @@ a {
   }
   
 /*Increased spacing to compensate for current font - may want to change if you use something else.*/
-p {
+/* p {
   line-height: 150%;
-  }
+  }*/
   
 /*Set font for headings.*/
 h1, h2, h3 {

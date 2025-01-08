@@ -1,0 +1,26 @@
+<!-- Convert Spanish and Rokadong links to take the user to the Spanish or Rokadong version of the current page -->
+<script type="text/javascript">
+	const url2 = window.location.pathname + window.location.search;
+	const english_link = url2.split('/').splice(url2.indexOf("rkd"),1).join('/');
+	const spanish_link = url2.split('/').map(a => {
+    if(a == 'rkd') 
+        return 'spa'; 
+    else 
+        return a;
+	}).join('/');
+  
+	document.getElementById("english-page").href=english_link;
+	document.getElementById("spanish-page").href=spanish_link;
+</script>
+<nav1>
+	<div class="navlink"><a href="#" id=english-page>English</a></div>
+	<div class="navlink"><a href="#" id=spanish-page>Español</a></div>
+	<div class="navlink"><a href="#" id=rokadong-page></a></div>
+</nav1>
+<nav2>
+	<div class="navlink"><a href="/selshan">Home</a></div>
+	<div class="navlink"><a href="/testdirectory.html">Directory</a></div>
+	<div class="navlink"><a href="/">Link 4</a></div>
+	<div class="navlink"><a href="/">Link 5</a></div>
+	<div class="navlink"><a href="/">RŊH</a></div>
+</nav2>

@@ -1,10 +1,16 @@
 <!-- Convert Spanish and Rokadong links to take the user to the Spanish or Rokadong version of the current page -->
 <script type="text/javascript">
-	const spanish_link = "/spa" + window.location.pathname + window.location.search;
-	const rokadong_link = "/rkd" + window.location.pathname + window.location.search;
+	const url2 = window.location.pathname + window.location.search;
+	const english_link = url2.split('/').splice(url2.indexOf("rkd"),1).join('/');
+	const spanish_link = url2.split('/').map(a => {
+    if(a == 'rkd') 
+        return 'spa'; 
+    else 
+        return a;
+	}).join('/');
   
+	document.getElementById("english-page").href=english_link;
 	document.getElementById("spanish-page").href=spanish_link;
-	document.getElementById("rokadong-page").href=rokadong_link;
 </script>
 <a href="/"><img src="https://i.imgur.com/FM4JrM1.png"><p>THE ŊORLD</a></p>
 <a href="mailto:ruviyatangan@astaryuu.cc"><img src="https://i.imgur.com/WeZ6fmy.png"><p>CONTACT</a></p>
@@ -12,5 +18,5 @@
 <a href="/news"><img src="https://i.imgur.com/eZGAhVt.png"><p>BROWSE</a></p>
 <a href="/record"><img src="https://i.imgur.com/2SMR5ij.png"><p>AUDIO</a></p>
 <a href="/about"><img src="https://i.imgur.com/zKnelZI.png"><p>ABOUT</a></p>
-<a href="#" id=spanish-page><img src="https://i.imgur.com/zKnelZI.png"><p>ESPAÑOL</a></p>
-<a href="#" id=rokadong-page><img src="https://i.imgur.com/zKnelZI.png"><p></a></p>
+<a href="#" id=english-page><img src="https://i.imgur.com/zKnelZI.png"><p>ENGLISH</a></p>
+<a href="#" id=spanish-page><img src="https://i.imgur.com/zKnelZI.png"><p>SPANISH</a></p>

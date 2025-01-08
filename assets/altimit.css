@@ -47,7 +47,7 @@ body{
 	flex-direction: column;
 	text-align: center;
 	font-size: 28px;
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'PT Sans Narrow', 'AH Rokajang Shika', -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", Ubuntu, "Helvetica Neue", "Lucida Sans Unicode", "Segoe UI", system-ui, sans-serif;
 	padding: 1.5rem 0 1.5rem 0;
 	overflow: scroll;
 	overflow-x: hidden;
@@ -79,7 +79,7 @@ body{
 	font-size: 56px;
 	padding-top: 3rem;
 	line-height: 38px;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Arial', 'AH Rokajang Shika', -apple-system, "BlinkMacSystemFont", "San Francisco", "Roboto", Ubuntu, "Helvetica Neue", "Lucida Sans Unicode", "Segoe UI", system-ui, sans-serif;
 	text-shadow: 3px 3px 0px #8C3F00;
 	color: #000;
 }

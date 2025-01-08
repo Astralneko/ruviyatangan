@@ -1,0 +1,257 @@
+body {
+  background: #fffeee;
+  font-family: "Goudy Stout", "Bookman Oldstyle", serif;
+  font-size:0.93rem;
+  }
+
+h1 {
+  font-size: 2.15rem;
+  }  
+
+h2 {
+  font-size: 1.4rem;
+  }
+
+h3 {
+  font-size: 1.1rem;
+  }
+
+h4 {
+  font-size: 1rem;
+  }
+
+/* Container/wrapper for "page" content. */
+.main {
+  width: 750px;
+  margin: 0 auto;
+  }
+
+.title {
+  text-align: center;
+  padding: 0.1rem 0.1rem 0 0.1rem;
+  }
+  
+.title p {
+  font-weight:bold;
+  }
+
+/* Left/right split subtitles. Used for top and bottom of page (date/subtitle, est./page #).*/
+.sub {
+  width: 100%;
+  }
+  
+.heading {
+  border-bottom:1px #000 solid;
+  border-top: 3px #000 double;
+  padding-bottom: -2px;
+  font-weight: bold;
+  }
+  
+.footer {
+  border-bottom: 3px #000 double;
+  border-top:1px #000 solid;
+  }
+
+.sub-left {
+  float: left;
+  }
+
+.sub-right {
+  text-align:right;
+  float: right;
+  }
+  
+.sub-left, .sub-right {
+  padding: 0.5em 0.375em 0.2em 0.375em;
+  }
+  
+/* Make a bunch of things display in all-caps without actually being all-caps.*/
+.title, .heading, h1, h2, h3, h4, readmore, .first-word {
+  text-transform: uppercase;
+  }
+  
+/* Column layout for main text. */
+.columns {
+  columns: 3;
+  }
+
+/* Container for content, including splash images.*/  
+.articles {
+  display: block;
+  padding: 1rem 0.275rem;
+  }
+  
+.articles p {
+  text-indent: 1em;
+  line-height:1.375em;
+  margin: 0.1em;
+  text-align:justify;
+  }
+  
+.articles h1, .articles h2, .articles h3, .articles h4 {
+  margin-top:0.1em;
+  margin-bottom:0.375em;
+  display: table; /* so headlines they don't get broken up across columns*/
+  }
+
+.block-column-article {
+  display: table; /*special use case? currently unused*/
+  }
+
+/* For big front-page images that take up full width.*/
+.splash {
+  padding-bottom: 0rem;
+  }
+
+/* Gap between pages. */
+hr {
+  max-width: 750px;
+  border: 0px;
+  height: 2px;
+  background: none;
+  margin: 1.25rem auto;
+  }
+
+/* Line break between articles, sections etc. */
+.main hr {
+  height:1px;
+  border:0px;
+  background: #000;
+  margin: 0.8rem 0 1rem 0;
+  }
+
+/* Blockquote with fancy curly quote decoration. */
+.articles blockquote {
+  margin:0;
+  display: block;
+  }
+
+.blockquote-inner {
+  font-weight: bold;
+  margin: 0.1rem;
+  margin: 1rem 2rem 0 2rem;
+  display: block;
+  font-size: 1.2em;
+  border: 0px solid red;
+  }
+
+.articles .blockquote-inner p {
+  text-indent: 0;
+  text-align: center;
+  }
+
+.articles blockquote:before, .articles blockquote:after {
+  font-size: 4.5rem;
+  margin: 0;
+  padding: 0 0.25rem;
+  position: relative;
+  height: 1.5rem;
+  border: 0px solid green;
+  }
+
+/* Insert the fancy curly quotes */
+.articles blockquote:before {
+  content: "“";
+  float: left;
+  top:-0.35rem;
+  }
+
+.articles blockquote:after {
+  content: "”";
+  float: right;
+  top:-1.35rem;
+  }
+
+/* Put this after blockquotes and the sub-left, sub-right pairs
+ * to make the 'float' effect work correctly without messing up
+ * the parent element and/or breaking subsequent formatting.
+ */
+clearfix {
+  content: "";
+  display: block;
+  clear: both;  
+  margin: 0;
+  padding: 0;
+  height: 0;
+  }
+
+/* "continued..." */
+.articles .readmore p, .articles .continued p {  
+  font-size: 0.89em;
+  text-indent: 0;
+  }
+
+.articles .readmore p {
+  font-weight: bold;
+  text-align: right;
+  margin: 0.5rem 0 0 0;
+  }
+  
+.articles .readmore:after {
+  display: block;
+  height: 0.1rem;
+  content: "";
+  }
+
+/* "continued from..." */
+.continued p {
+  font-style: italic;
+  margin: 0.5rem 0;
+  }
+  
+.articles img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0.5rem auto;
+  filter: grayscale(90%); /*make images almost black-and-white*/
+  }
+
+/* Optional hover effect on images.*/
+.articles img:hover {
+  filter: grayscale(75%);
+  }
+
+
+/*Tweaks for smaller screens + mobile devices.*/
+
+@media (max-width: 754px) {
+  .main {
+    width: 100%;
+    }
+  .columns {
+    columns: 2;
+    }
+  }
+
+@media (max-width: 500px) {
+  h1 {
+  font-size: 1.95rem;
+  }  
+  
+  h2 {
+    font-size: 1.1rem;
+    }
+  
+  h3 {
+    font-size: 0.975rem;
+    }
+
+  h4 {
+  font-size: 0.92rem;
+    }
+  .sub-left, .sub-right {
+    max-width: 50%;
+    }
+
+  body {
+    font-size: 0.87rem;
+    }
+  }
+  
+@media (max-width: 400px) {
+  .columns {
+    columns: 1;
+    }
+  }

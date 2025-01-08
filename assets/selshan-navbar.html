@@ -1,20 +1,34 @@
 <!-- Convert Spanish and Rokadong links to take the user to the Spanish or Rokadong version of the current page -->
-<script type="text/javascript">
-	const spanish_link = "/spa" + window.location.pathname + window.location.search;
-	const rokadong_link = "/rkd" + window.location.pathname + window.location.search;
-  
-	document.getElementById("spanish-page").href=spanish_link;
-	document.getElementById("rokadong-page").href=rokadong_link;
-</script>
-<nav1>
-	<div class="navlink"><a href="#" id=english-page>English</a></div>
-	<div class="navlink"><a href="#" id=spanish-page>Español</a></div>
-	<div class="navlink"><a href="#" id=rokadong-page></a></div>
-</nav1>
-<nav2>
-	<div class="navlink"><a href="/selshan">Home</a></div>
-	<div class="navlink"><a href="/testdirectory.html">Directory</a></div>
-	<div class="navlink"><a href="/">Link 4</a></div>
-	<div class="navlink"><a href="/">Link 5</a></div>
-	<div class="navlink"><a href="/">RŊH</a></div>
-</nav2>
+<!DOCTYPE html>
+<html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>not a fanlisting</title>
+	<!-- Do not edit these -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link href="https://hoard.astaryuu.cc/ruviyatangan/flisty.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+	<nav1>
+		<div class="navlink"><a href="#" id=english-page>English</a></div>
+		<div class="navlink"><a href="#" id=spanish-page>Español</a></div>
+		<div class="navlink"><a href="#" id=rokadong-page></a></div>
+	</nav1>
+	<nav2>
+		<div class="navlink"><a href="/selshan">Home</a></div>
+		<div class="navlink"><a href="/testdirectory.html">Directory</a></div>
+		<div class="navlink"><a href="/">Link 4</a></div>
+		<div class="navlink"><a href="/">Link 5</a></div>
+		<div class="navlink"><a href="/">RŊH</a></div>
+	</nav2>
+	<script type="text/javascript">
+		const spanish_link = "/spa" + window.location.pathname + window.location.search;
+		const rokadong_link = "/rkd" + window.location.pathname + window.location.search;
+		
+		document.getElementById("spanish-page").href=spanish_link;
+		document.getElementById("rokadong-page").href=rokadong_link;
+	</script>
+</body>

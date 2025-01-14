@@ -1,11 +1,13 @@
 @font-face {
   font-family: "AH Rokajang Shika";
   src: local("AH Rokajang Shika"), url("https://hoard.astaryuu.cc/astaryuu/fonts/AHRokajangShika.ttf") format(truetype);
+	size-adjust: 110%;
 }
 
 @font-face {
   font-family: "AH Rokajang Shika Light";
   src: local("AH Rokajang Shika Light"), url("https://hoard.astaryuu.cc/astaryuu/fonts/AHRokajangShika-Light.otf") format(truetype);
+	size-adjust: 110%;
 }
 
 *{
